@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics of Microplastics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .introduction {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .image-text-pair {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-text-pair img {
+            width: 45%;
+            height: auto;
+        }
+
+        .image-text-pair .text {
+            width: 50%;
+        }
+
+        footer {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+        }
+
+        footer h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">General info</a></li>
+            <li><a href="page2.html">Physics</a></li>
+            <li><a href="page3.html">ESS</a></li>
+            <li><a href="page4.html">Biochem</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Physics of Microplastics</h1>
+        <div class="introduction">
+            <h2>Introduction</h2>
+            <p>This page introduces two numerical simulations designed to model the behavior of microplastics in different water bodies: a river and a circular lake. We used advection-dispersion equation (ADE) to stimulate the microplastic behavior in water bodies. ADE provides a model for the movement of particles due to the flow of water and the spreading of particles due to turbulence and molecular dispersion.</p>
+        </div>
+        <div class="image-text-pair">
+            <div class="text">
+                <h2>Microplastics in River</h2>
+                <p>The graph above illustrates the concentration of microplastics along the length of a river at various time intervals (t = 0 d, t = 250 d, t = 500 d, and t = 1000 d) with a pollution source at one end of the river and flow velocity 0.1m/s.</p>
+            </div>
+            <img src="physics-section1.jpeg" alt="Microplastics in River">
+        </div>
+        <div class="image-text-pair">
+            <img src="physics-section2.jpeg" alt="Microplastics in Circular Lake">
+            <div class="text">
+                <h2>Microplastics in Circular Lake</h2>
+                <p>The graph above illustrates the concentration of microplastics over a circular lake at various time intervals (t = 0 d, t = 250 d, t = 500 d, and t = 1000 d) with a pollution source at a point on the circumference and modified flow velocity for lake.</p>
+            </div>
+        </div>
+        <div class="image-text-pair">
+            <div class="text">
+                <h2>Advection-Dispersion Equation</h2>
+                <p>The advection-dispersion equation (ADE) used in our simulations models the movement and spreading of microplastics in water bodies. It combines the effects of water flow and turbulence-induced dispersion.</p>
+            </div>
+            <img src="equation.png" alt="Advection-Dispersion Equation">
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
