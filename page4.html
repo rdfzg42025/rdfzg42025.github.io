@@ -91,13 +91,32 @@
 
         .image-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 20px;
         }
 
-        .image-container img {
-            width: 80%;
+        .image-item {
+            width: 45%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
             height: auto;
+        }
+
+        .caption {
+            font-size: 1em;
+            text-align: center;
+            margin-top: -10px;
+        }
+        .caption1{
+            padding-top: 10px;
+            font-size: 1em;
+            text-align: center;
+            margin-top: -10px;
         }
 
         footer {
@@ -187,16 +206,62 @@
             </table>
         </div>
         <div class="image-container">
-            <img src="page4.png" alt="Colony Count Chart">
+            <div class="image-item">
+                <img src="page4.png" alt="Colony Count Chart">
+                <div class="caption">Colony Count Chart</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Comparing Microplastics in Waterbody of Beijing and Changbai Mountain</h2>
+            <p>Microplastics with a size of less than 5mm are increasingly ubiquitously reported in water, land, and even air. Over the past few years, microplastics pollution has attracted a lot of interest since they are dangerous to the environment and human health (Auta et al. 2017; Hale et al. 2020; Zhang et al. 2020). There is currently insufficient evidence that connects microplastic consumption with negative human health impacts, but experiments on animals suggest possible dangers. The consequences of microplastic filtration are inflammation, oxidative stress, and cytotoxicity because of the abrasive properties of microplastics. Chemical effects stem from the toxic additives in plastics and pollutants that get adsorbed on microplastics which can lead to reproductive and developmental toxicities or immune reactions. Biological effects include the release of pathogens that can cause diseases or have an impact on the normal functioning of the intestinal microflora (Blackburn & Green 2021).</p>
+
+            <p>To understand the microplastic pollution in natural water bodies and urban water bodies, we chose to collect and compare water samples from the Changbai Mountain region and Beijing. The results show that Beijing's water bodies are more seriously polluted by microplastics than Changbai Mountain.</p>
+
+            <h2>Method</h2>
+            <p>Combine water samples from the same location and filter through a 5mm sieve to remove large particles (the volume of water sample from each area is 1L).</p>
+            <p>Add 30ml of freshly prepared 0.05M ferrous sulfate solution and 30% hydrogen peroxide solution to the sample, mix thoroughly, and let it stand for 24 hours to fully digest organic matter.</p>
+            <p>After standing, pass the sample through a 2μm microporous membrane, collect the particles on the membrane, place them on a slide, and observe the contents on the membrane under a microscope at 100x magnification recording the findings (Hu et al. 2021).</p>
+
+            <h2>Result and Discussion</h2>
+            <p>The pictures below show the fields of the microscope from different areas:</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="page42.png" alt="Residue from water sample of Beijing">
+                    <div class="caption1">Figure 1: Residue from water sample of Beijing</div>
+                </div>
+                <div class="image-item">
+                    <img src="page43.png" alt="Residue A from water body of Changbai mountain">
+                    <div class="caption1">Figure 2: Residue A from water body of Changbai mountain</div>
+                </div>
+                <div class="image-item">
+                    <img src="page44.png" alt="Residue B from water body of Changbai mountain">
+                    <div class="caption1">Figure 3: Residue B from water body of Changbai mountain</div>
+                </div>
+                <div class="image-item">
+                    <img src="page45.png" alt="Residue C from water body of Changbai mountain">
+                    <div class="caption1">Figure 4: Residue C from water body of Changbai mountain</div>
+                </div>
+            </div>
+
+            <p>Using a microscope, we found that only the residue from Beijing is polluted by microplastics. Due to the small sample size, it is challenging to conduct precise quantitative analysis for the experiment. Through rough estimates, there are 4 pieces of microplastics in the residue from the river in Beijing (Due to the use of a scraper that may damage the structure of microplastics during the transfer from the membrane, fragments are considered to originate from the same particle as the larger pieces of microplastic). The previous research shows that the average abundance of microplastics is 4160 n·m<sup>-3</sup> (where n is the number of particles) or 4.160 n·L. This implies that our research findings are consistent with previous studies (Hu et al. 2021).</p>
+
+            <p>However, there are also other research studies conducted in the same region that show significant discrepancies with our findings. For instance, a research suggests that the abundance of microplastics in a river in Beijing is 0.35±0.22 n/L. This difference may be caused by multiple reasons: 1. the different filtering methods; 2. The reduction in microplastic abundance due to differences in rainfall (Wang et al. 2020).</p>
+
+            <h2>Conclusion</h2>
+            <p>In conclusion, this study aimed to contrast levels of microplastic pollution in natural and urban aquatic systems by sampling water from Changbai Mountain and Beijing respectively. The finding of this study indicates that water microplastics levels in Beijing are much higher than in the clean water of Changbai Mountain. Through a method that included sieving, chemical digestion, and microporous membrane filtration, we discovered four microplastics in the Beijing samples and no microplastics in the Changbai Mountain samples. The results obtained in this study are consistent with other research that revealed a large concentration of microplastics in urban areas. The differences with other studies could be due to differences in the filtration technique and variability in rainfall, which influences the movement of microplastics.</p>
         </div>
     </div>
     <footer>
         <h2>Sources</h2>
         <ul>
-            <li>Source 1: Description of source 1</li>
-            <li>Source 2: Description of source 2</li>
-            <li>Source 3: Description of source 3</li>
-            <!-- Add more sources as needed -->
+            <li>Auta H.S., Emenike C.U., Fauziah S.H. 2017. Distribution and importance of microplastics in the marine environment: a review of the sources fate effects and potential solutions. Environ. Int. 102 165–176.</li>
+            <li>Blackburn K & Green D (2022). The potential effects of microplastics on human health: What is known and what is unknown. Ambio Springer <a href="https://doi.org/10.1007/S13280-021-01589-9">https://doi.org/10.1007/S13280-021-01589-9</a></li>
+            <li>Hale R.C., Seeley M.E., La Guardia M.J., Mai L., Zeng E.Y. 2020. A global perspective on microplastics. J. Geophys. Res. Oceans. 125 (1). <a href="https://doi.org/10.1029/2018JC014719">https://doi.org/10.1029/2018JC014719</a></li>
+            <li>HU Jia-min, ZUO Jian-e, LI Di, XIE Zhen-wen, CHEN Lei. Composition and Distribution of Microplastics in the Water and Sediments of Urban Rivers in Beijing[J]. Environmental Science 2021 42(11): 5275-5283.</li>
+            <li>Wang C., Xing R., Sun M., Ling W., Shi W., Cui S. 2020. Microplastics profile in a typical urban river in Beijing. Science of the Total … Elsevier <a href="https://www.sciencedirect.com/science/article/pii/S0048969720342303">https://www.sciencedirect.com/science/article/pii/S0048969720342303</a></li>
+            <li>Zhang Q., Xu E.G., Li J., Chen Q., Ma L., Zeng E.Y., Shi H. 2020b. A review of microplastics in table salt drinking water and air: direct human exposure. Environ. Sci. Technol. 54 (7) 3740–3751.</li>
         </ul>
     </footer>
 </body>
